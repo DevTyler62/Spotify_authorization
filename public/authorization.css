@@ -1,0 +1,150 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #212121;
+    color:#ffffff;
+}
+  #login{
+      width:90%;
+      margin:auto;
+      text-align:center;
+      margin-top:20vh;
+  }
+  #datafylogo{
+      width:20%;
+      height:200px;
+      /* background-color:green; */
+      margin:auto;
+      margin-bottom:2vh;
+  }
+  #datafylogo img{
+    width: 100%
+  }
+  #intro{
+      width:50%;
+      color:white;
+      margin:auto;
+  }
+  #intro h3{
+      font-size:2em;
+      line-height: 1.5em;
+      /* text-transform: uppercase; */
+      font-weight: 800;
+      margin-bottom:3vh;
+  }
+  #intro h4{
+      font-weight: 300;
+      margin-bottom:7vh;
+      font-size:1.25em;
+  }
+  #login_button{
+      text-transform: uppercase;
+      font-weight:800;
+      color:white;
+      background-color:green;
+      width:30%;
+      margin:auto;
+      padding:20px 20px;
+      border-radius: 25px;
+      box-sizing: border-box;
+      background: -webkit-linear-gradient(0deg, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(0deg, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #login_button a{
+      color:white;
+      text-decoration: none;
+  }
+  #login_button a:active{
+      color:white;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width:769px){
+      #datafylogo{
+          width:30%;
+          margin-top:20vh;
+      }
+      #intro{
+          width:70%;
+          margin-top:5vh;
+      }
+      #intro h4{
+          font-size: 1.5em;
+      }
+      #login_button{
+          font-size:1.5em;
+          width: 50%;
+      }
+  }
+
+  @media screen and (max-width:414px){
+    #datafylogo{
+        width:40%;
+        margin-top:20vh;
+        height:100px;
+    }
+    #intro{
+        width:80%;
+        margin-top:5vh;
+    }
+    #intro h3{
+        font-size:1.5em;
+    }
+    #intro h4{
+        font-size: 1em;
+    }
+    #login_button{
+        font-size:1em;
+        width: 60%;
+    }
+}
