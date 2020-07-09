@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '813ddd81a59045608f42f4a4a3bb3b10'; // Your client id
 var client_secret = '9259536c7aff47e1abe375f8bf18ec40'; // Your secret
-// var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+//var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 var redirect_uri = 'https://datafy-spotify-login.herokuapp.com/callback'; // Your redirect uri
 
 
@@ -106,7 +106,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        // res.redirect('http://localhost:3000/#' +
+        //res.redirect('http://localhost:3000/#' +
         res.redirect('https://datafy-app.herokuapp.com/#' +
           querystring.stringify({
             access_token: access_token,
