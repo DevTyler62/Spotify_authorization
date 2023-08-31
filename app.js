@@ -18,7 +18,6 @@ var client_secret = '9259536c7aff47e1abe375f8bf18ec40'; // Your secret
 // var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 // var redirect_uri = 'https://datafy-spotify-login.herokuapp.com/callback'; // Your redirect uri
 var redirect_uri = 'https://datafy-auth.vercel.app/callback'; // Your redirect uri
-// Does it work now lol
 
 /**
  * Generates a random string containing numbers and letters
@@ -45,6 +44,8 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/login', function(req, res) {
 
+  // console.log("Error in begining of login");
+
   var state = generateRandomString(16);
   res.cookie(stateKey, state);
 
@@ -58,12 +59,16 @@ app.get('/login', function(req, res) {
       redirect_uri: redirect_uri,
       state: state
     }));
+
+    // console.log("Error in end of login");
 });
 
 app.get('/callback', function(req, res) {
 
   // your application requests refresh and access tokens
   // after checking the state parameter
+
+  // console.log("Error in begining of callback");
 
   var code = req.query.code || null;
   var state = req.query.state || null;
