@@ -18,6 +18,7 @@ var client_secret = '9259536c7aff47e1abe375f8bf18ec40'; // Your secret
 // var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
 // var redirect_uri = 'https://datafy-spotify-login.herokuapp.com/callback'; // Your redirect uri
 var redirect_uri = 'https://datafy-auth.vercel.app/callback'; // Your redirect uri
+// Does it work now lol
 
 /**
  * Generates a random string containing numbers and letters
