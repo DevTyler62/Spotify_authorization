@@ -124,7 +124,8 @@ app.get("/callback", function (req, res) {
         // res.redirect(
         //   "https://datafy-client.vercel.app/#" +
         res.redirect(
-          "http://localhost:3000/#" +
+          // "http://localhost:3000/#" +
+          "https://datafy-client.vercel.app/#" +
             querystring.stringify({
               access_token: access_token,
               refresh_token: refresh_token,
