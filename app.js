@@ -58,9 +58,9 @@ app.get("/login", function (req, res) {
     "https://accounts.spotify.com/authorize?" +
       querystring.stringify({
         response_type: "code",
-        client_id: client_id,
+        client_id: process.env.CLIENT_ID,
         scope: scope,
-        redirect_uri: redirect_uri,
+        redirect_uri: process.env.REDIRECT_URI,
         state: state,
       })
   );
