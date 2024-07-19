@@ -1,6 +1,8 @@
 # Backend for authentication for Datafy project for Software rapid prototyping class
 
-This project used and adjusted the exisiting demo that Spotify provides for the documentation of Oauth
+This project used and adjusted the existing demo that Spotify provides for the documentation of Oauth.
+
+This part of the project for the server side is being hosted using OnRender.
 
 # Spotify Accounts Authentication Examples
 
